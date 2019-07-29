@@ -1,0 +1,3 @@
+geometry,name,vicinity,types,lat,lng
+"{'location': {'lat': 29.9462348, 'lng': -90.0786902}, 'viewport': {'northeast': {'lat': 29.9475067302915, 'lng': -90.0771221697085}, 'southwest': {'lat': 29.9448087697085, 'lng': -90.07982013029151}}}",Union Passenger Terminal,"1001 Loyola Avenue, New Orleans","['train_station', 'transit_station', 'point_of_interest', 'establishment']",29.9462348,-90.0786902
+"{'location': {'lat': 29.9571485, 'lng': -90.1071925}, 'viewport': {'northeast': {'lat': 29.95845488029149, 'lng': -90.1058600197085}, 'southwest': {'lat': 29.9557569197085, 'lng': -90.10855798029151}}}",National Railroad Passenger,"3319 Earhart Boulevard, New Orleans","['train_station', 'transit_station', 'point_of_interest', 'establishment']",29.9571485,-90.1071925
