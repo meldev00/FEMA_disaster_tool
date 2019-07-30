@@ -8,6 +8,17 @@ In the event of a disaster, it is essential for goverment and private forces to 
   - build a tool that takes in a zip code and returns the potential impact of a disaster to the lifelines
 
 ## Data Dictionary
+|Feature|Type|Dataset|Description|
+|-------|----|-------|-----------|
+|FEMA Lifeline|string|full_dataset.csv|Description of one of FEMA's seven lifelines.|
+|geometry|dictionary|full_dataset.csv|Multiple variations on latitude and Longitude information about a location.|
+|name|string|full_dataset.csv|Name of business or location.|
+|types|string|full_dataset.csv|Google categorical type.|
+|vicinity|string|full_dataset.csv|Address of location.|
+|lat|float|full_dataset.csv|Latitude of location.|
+|lng|float|full_dataset.csv|Longitude of location.|
+|Website_FEMA|int|full_dataset.csv|Numeric representation FEMA categorical lifelines.|
+
 
 
 ## Repository Structure
