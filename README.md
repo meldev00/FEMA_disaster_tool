@@ -33,7 +33,12 @@ In the event of a disaster, it is essential for goverment and private forces to 
 ## Repository Structure
 
 
-## Executive Summary
+## Executive Summary  
+
+In the event of a natural disaster it is important to be prepared. To this end New Light Technologies has tasked our team with creating a tool to identify vulnerable areas in a community and project possible effects if a disaster event were to hit that area.  
+
+The metrics we will be using to estimate community vunlerablility are set forth by FEMA's(Federal Emergency Management Agency) seven lifelines: Safety and Security, food water and sheltering, health and medical, energy, communication, transportation, and hazardous material. These metrics were implemented after multiple large scale disasters of 2017. "...the lifeline construct can help responders and decision-makers rapidly determine the scope, complexity, and
+interdependent impacts of an incident."[2]   
 
 In the early stages of this study, we outlined the data that would be most important for FEMA if a natural disaster were to hit. We determined there are two stages of a disaster preparedness plan that we found of importance. The first stage is a preemptive look at what areas of a given location are already in danger of low life-line support. This is done by clustering the life-lines using ____________ and can give insight for support systems that FEMA can put in place for when/if an event occurs. The second stage is a  reactionary approach to an event shortly after it begins. We created a tool that takes the event(disaster) center and radius as inputs and returns the life-lines and their respective categories in that area. The life-lines are ordered by proximity to the event center, so the operator can make assumptions about which may be affected depending on the type of disaster.
 
@@ -51,3 +56,4 @@ Our group decided to use Google Maps and the Google Place Search API to locate p
 
 ## Resources
 https://www.fema.gov/media-library-data/1543953591582-d3437147e8954b5c9b8469dc2d173531/Revised_Community_Lifelines_Information_Sheet.pdf
+[2] https://www.fema.gov/media-library-data/1550596625129-99b1671f270c18c934294a449bcca3ce/Tab2a.CommunityLifelinesToolkitPresenterGuide_508.pdf
