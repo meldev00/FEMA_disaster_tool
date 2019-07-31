@@ -2,9 +2,9 @@
 
 ## Problem Statement
 
-In the event of a disaster, it is essential for goverment and private forces to rapidly identify potential threats and communicate effectively about damage and rescue efforts if needed. FEMA has developed a list of seven life-lines that are deemed essential to successfully address the most pressing issues with the most clarity across the board. Using these seven life-lines as search criteria, this study was conducted for New Light Technologies with two goals:
+In the event of a disaster, it is essential that goverment and private forces rapidly identify potential threats and communicate damage and rescue efforts effectively. FEMA has developed a list of seven lifelines which represent establishments most essential to supporting human populations during times of crisis. The lifelines are as follows: safety and security; food, water, and sheltering; health and medical; energy; communications; transportation; and hazardous waste. With these seven lifelines in mind, our study was conducted for New Light Technologies with two goals:
 
-  - to predict where the largest threat is to the life-lines prior to a disaster
+  - to predict where the largest threat is to the lifelines prior to a disaster
   - build a tool that takes in a zip code and returns the potential impact of a disaster to the lifelines
 
 ## Data Dictionary
