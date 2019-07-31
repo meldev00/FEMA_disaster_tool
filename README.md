@@ -39,7 +39,7 @@ New Light Technologies has tasked our team with creating a tool to identify vuln
 interdependent impacts of an incident."[2]   
 
 Our group decided to use Google Maps and the Google Place Search API to locate places that may fall into one of the seven lifeline categories. We chose Google Maps over other sources like Yelp, due in part to the fact that Google provides many more businesses than Yelp's API. New Orleans was picked as our prototype city due to its history of severe weather. Using the Google API, we wrote a function in order to pull businesses within a specified radius of a user-inputed latitude an longitude. Each business has a corresponding categorical "type" assigned by Google: this was used to determine into which of the seven lifelines each business would fall.[3] Useful information pulled from the Google API included: business name, address, type, and latitude/longitude. This information did have to be re-engineered in order to be used with our classification and clustering algorithms.\
-\
+ \
 
 In the early stages of this study, we outlined the data that would be most important for FEMA if a natural disaster were to hit. We determined there are two stages of a disaster preparedness plan that we found important:
 
