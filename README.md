@@ -58,7 +58,7 @@ The second stage is a reactionary approach to an event shortly after it begins. 
 - Research done on FEMA lifelines and previous disasters
 - Dataset found: https://www.ncdc.noaa.gov/stormevents/ftp.jsp
 
-## Findings and Conclusions
+## Conclusions and Next Steps
 
 ## Resources
 [1] https://www.fema.gov/media-library-data/1543953591582-d3437147e8954b5c9b8469dc2d173531/Revised_Community_Lifelines_Information_Sheet.pdf  
