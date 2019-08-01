@@ -4,7 +4,7 @@
 
 In the event of a disaster, it is essential that goverment and private forces rapidly identify potential threats and communicate damage and rescue efforts effectively. The Federal Emergency Management Agency, known as FEMA, has developed a list of seven lifelines which represent establishments most essential to supporting human populations during times of crisis. The lifelines are as follows: safety and security; food, water, and sheltering; health and medical; energy; communications; transportation; and hazardous waste. With these seven lifelines in mind, our study was conducted for New Light Technologies with two goals:
 
-  - to predict where the largest threat is to the lifelines prior to a disaster
+  - to predict the location of the largest threats to lifelines prior to a disaster
   - build a tool that takes in a zip code and returns the potential impact of a disaster to the lifelines
 
 ## Data Dictionary
@@ -18,6 +18,17 @@ In the event of a disaster, it is essential that goverment and private forces ra
 |lat|float|full_dataset.csv|Latitude of location.|
 |lng|float|full_dataset.csv|Longitude of location.|
 |Website_FEMA|int|full_dataset.csv|Numeric representation FEMA categorical lifelines.|
+|YEARMONTH|int|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|Year and month of storm event.|
+|EPISODE_ID|int|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|Episode identifying number.|
+|EVENT_ID|int|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|Event identifying number.|
+|LOCATION_INDEX|int|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|?|
+|RANGE|float|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|?|
+|AZIMUTH|string|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|?|
+|LOCATION|string|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|City of event.|
+|LATITUDE|float|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|?|
+|LONGITUDE|float|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|?|
+|LAT2|int|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|?|
+|LON2|int|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|?|
 
 ## Repository Structure
 
@@ -42,18 +53,20 @@ The second stage is a reactionary approach to an event shortly after it begins. 
 
 [Insert Images here]  
 
-In addition to the functionality of the Python Jupyter Notebook program, as an end user tool, a web app was built to allow for a quick view of businesses within a specified radius of the selected event center, filtered by FEMA category. The web app runs entirely in the browser with no server-side coding needed and utilizes json-format files generated from our models, consumed and processed by Javascript and HTML. Below are examples of this additional tools output.
 
-![](./images/P5_ss2.png) ![](./images/P5_ss3.png) ![](./images/P5_ss4.png) ![](./images/P5_ss5.png) 
-
-
+- Google APIs obtained to pull location of lifelines in a given area
+- Research done on FEMA lifelines and previous disasters
 - Dataset found: https://www.ncdc.noaa.gov/stormevents/ftp.jsp
 
-## Conclusions and Limitations
+## Results
 
+The scope of this project was to 1) predict the locations of highest lifeline density and 2) create a lifeline monitoring tool for the city of New Orleans - both serving as proof of concept for any location. These objectives were met by our project, as demonstrated by the functioning website and project notebooks.
 
-## Next Steps
+## Limitations and Next Steps
 
+While collecting data, it was realized that the Google Places API sets a hard limit at 60 businesses per request. Although we were able to compensate for this fact by increasing the number of business types including in our model, we do not believe we were able to attain 100% of lifeline-businesses within the city of New Orleans.
+
+Ideas for future research and modeling, for which we did not have the time nor budget, includes the inclusion of population density as a feature to predict the number of people affected by the diaster. Also, we noticed that several business that exist in close proximity to others businesses of similar nature may be inflating lifeline-density in certain areas.
 
 ## Resources
 [1] https://www.fema.gov/media-library-data/1543953591582-d3437147e8954b5c9b8469dc2d173531/Revised_Community_Lifelines_Information_Sheet.pdf  
