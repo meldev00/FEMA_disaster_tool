@@ -18,17 +18,6 @@ In the event of a disaster, it is essential that goverment and private forces ra
 |lat|float|full_dataset.csv|Latitude of location.|
 |lng|float|full_dataset.csv|Longitude of location.|
 |Website_FEMA|int|full_dataset.csv|Numeric representation FEMA categorical lifelines.|
-|YEARMONTH|int|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|Year and month of storm event.|
-|EPISODE_ID|int|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|Episode identifying number.|
-|EVENT_ID|int|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|Event identifying number.|
-|LOCATION_INDEX|int|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|?|
-|RANGE|float|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|?|
-|AZIMUTH|string|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|?|
-|LOCATION|string|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|City of event.|
-|LATITUDE|float|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|?|
-|LONGITUDE|float|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|?|
-|LAT2|int|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|?|
-|LON2|int|StormEvents_locations-ftp_v1.0_d2019_c20190716.csv|?|
 
 ## Repository Structure
 
