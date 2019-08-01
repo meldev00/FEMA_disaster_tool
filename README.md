@@ -53,9 +53,11 @@ The second stage is a reactionary approach to an event shortly after it begins. 
 
 [Insert Images here]  
 
+In addition to the functionality of the Python Jupyter Notebook program, as an end user tool, a web app was built to allow for a quick view of businesses within a specified radius of the selected event center, filtered by FEMA category. The web app runs entirely in the browser with no server-side coding needed and utilizes json-format files generated from our models, consumed and processed by Javascript and HTML. Below are examples of this additional tools output.
 
-- Google APIs obtained to pull location of lifelines in a given area
-- Research done on FEMA lifelines and previous disasters
+![](./images/P5_ss2.png) ![](./images/P5_ss3.png) ![](./images/P5_ss4.png) ![](./images/P5_ss5.png) 
+
+
 - Dataset found: https://www.ncdc.noaa.gov/stormevents/ftp.jsp
 
 ## Conclusions and Limitations
