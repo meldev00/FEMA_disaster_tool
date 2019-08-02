@@ -18,16 +18,17 @@ In the event of a disaster, it is essential that goverment and private forces ra
 |Website_FEMA|int|full_dataset.csv|Numeric representation FEMA categorical lifelines.|
 
 ## Repository Structure
-
-
+- code: contains all of the code files for evaluating the data and creating and running the tool for FEMA
+- datasets: contains all of the data collected from the api 
+- google_api_work:contains the code for using the google api
+- images
+- README
 
 ## Executive Summary  
 
-New Light Technologies has tasked our team with creating a tool to identify vulnerable areas in a community and project possible effects if a disaster event were to hit that area. The metrics we used to estimate community vunlerablility are the status of the seven lifelines provided by FEMA. These metrics were established after multiple large scale disasters in 2017. "...[T]he lifeline construct can help responders and decision-makers rapidly determine the scope, complexity, and
-interdependent impacts of an incident."[2]   
+New Light Technologies has tasked our team with creating a tool to identify vulnerable areas in a community and project possible effects if a disaster event were to hit that area. The metrics we used to estimate community vunlerablility are the status of the seven lifelines provided by FEMA. These metrics were established after multiple large scale disasters in 2017. "...[T]he lifeline construct can help responders and decision-makers rapidly determine the scope, complexity, and interdependent impacts of an incident."[2]   
 
-Our group decided to use Google Maps and the Google Place Search API to locate places that may fall into one of the seven lifeline categories. We chose Google Maps over other sources like Yelp, due in part to the fact that Google provides many more businesses than Yelp's API. New Orleans was picked as our prototype city due to its history of severe weather. Using the Google API, we wrote a function in order to pull businesses within a specified radius of a user-inputed latitude an longitude. Each business has a corresponding categorical "type" assigned by Google: this was used to determine into which of the seven lifelines each business would fall.[3] Useful information pulled from the Google API included: business name, address, type, and latitude/longitude. This information did have to be re-engineered in order to be used with our classification and clustering algorithms.\
-<br/>
+Our group decided to use Google Maps and the Google Place Search API to locate places that may fall into one of the seven lifeline categories. We chose Google Maps over other sources like Yelp, due in part to the fact that Google provides many more businesses than Yelp's API. New Orleans was picked as our prototype city due to its history of severe weather. Using the Google API, we wrote a function in order to pull businesses within a specified radius of a user-inputed latitude and longitude. Each business has a corresponding categorical "type" assigned by Google: this was used to determine into which of the seven lifelines each business would fall.[3] Useful information pulled from the Google API included: business name, address, type, and latitude/longitude. This information did have to be re-engineered in order to be used with our classification and clustering algorithms.
 
 In the early stages of this study, we outlined the data that would be most important for FEMA if a natural disaster were to hit. We determined there are two stages of a disaster preparedness plan that we found important:
 
@@ -37,7 +38,7 @@ The first stage is a preemptive look at what areas of a given location are alrea
 
 As expected the highest concentration of lifelines is in the downtown area. Nevertheless, it is worth noting the other areas in which there are concentrations in the surrounding areas. In preparing for possible natural disasters it is suggested that FEMA consider these locations as highly vulnerable.
 
-The second stage is a reactionary approach to an event shortly after it begins. We created a tool that takes the event (disaster) center and radius as inputs and returns the lifelines and their respective categories within that area. The lifelines are ordered by proximity to the event center, so the operator can make assumptions about which may be affected depending on the type of disaster. In order to determine proximity from a central event center, each lifeline's distance was calculated using a function utilizing latitude and longitude. This infomation can then be visualized for the user in multiple ways. Using map pop-ups, the user can see information about individual lifeline locations. Looking at the heatmap, the user can also see how individual lifelines are distributed in a given area.
+The second stage is a reactionary approach to an event shortly after it begins. We created a tool that takes the event (disaster) center and radius as inputs and returns the lifelines and their respective categories within that area. The lifelines are ordered by proximity to the event center, so the operator can make assumptions about which may be affected depending on the type of disaster. In order to determine proximity from a central event center, each lifeline's distance was calculated using a function utilizing latitude and longitude. This infomation can then be visualized for the user in multiple ways. Looking at the heatmap, the user can also see how individual lifelines are distributed in a given area.
 
 [Insert Images here]  
 
