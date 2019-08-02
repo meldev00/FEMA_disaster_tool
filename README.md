@@ -34,17 +34,17 @@ In the early stages of this study, we outlined the data that would be most impor
 
 The first stage is a preemptive look at what areas of a given location are already in danger of low lifeline support. We tried to accomplish this task by using KMeans clustering; however, an un-clustered heatmap of lifeline-businesses proved to be more representational in this context. Given this, FEMA can put in place support systems for when/if an event occurs. Based on our model you can see below the areas in New Orleans that have high concentrations of specific lifelines.
 
-![](./images/all_life_lines.png | width = 10)
+![](./images/all_life_lines.png)
 
 As expected the highest concentration of lifelines is in the downtown area. Nevertheless, it is worth noting the other areas in which there are concentrations in the surrounding areas. In preparing for possible natural disasters it is suggested that FEMA consider these locations as highly vulnerable.
 
-The second stage is a reactionary approach to an event shortly after it begins. We created a tool that takes the event (disaster) center and radius as inputs and returns the lifelines and their respective categories within that area. The lifelines are ordered by proximity to the event center, so the operator can make assumptions about which may be affected depending on the type of disaster. In order to determine proximity from a central event center, each lifeline's distance was calculated using a function utilizing latitude and longitude. This infomation can then be visualized for the user in multiple ways. Looking at the heatmap, the user can also see how individual lifelines are distributed in a given area.
+The second stage is a reactionary approach to an event shortly after it begins. We created a tool that takes the event (disaster) center and radius as inputs and returns the lifelines and totals of their respective categories within that area. The lifelines are ordered by proximity to the event center, so the operator can make assumptions about which may be affected depending on the type of disaster. In order to determine proximity from a central event center, each lifeline's distance was calculated using a function utilizing latitude and longitude. This infomation can then be visualized for the user in multiple ways. Looking at the heatmap, the user can also see how individual lifelines are distributed in a given area.
 
 
 ![](./images/cluster.png)
 
 
-In addition to the tool located in the Jupyter Notebooks, as an end user tool, a web app was built to allow for a quick view of businesses within a specified radius of the selected event center, filtered by FEMA category. The web app runs entirely in the browser with no server-side coding needed and utilizes json-format files generated from our models, consumed and processed by Javascript and HTML. Below are images of the capabilities of the online tool.  
+In addition to the tool located in the Jupyter Notebooks, as an end user tool, a web app was built to allow for a quick view of businesses within a specified radius of the selected event center, filtered by FEMA category. The web app runs entirely in the browser with no server-side coding needed and utilizes json-format files generated from our models, consumed and processed by Javascript and HTML. Below is an image of the capabilities of the online tool.  
 
 
 ![](./images/P5_ss3.png)
@@ -59,7 +59,7 @@ The scope of this project was to 1) predict the locations of highest lifeline de
 
 While collecting data, it was realized that the Google Places API sets a hard limit at 60 businesses per request. Although we were able to compensate for this fact by increasing the number of business types including in our model, we do not believe we were able to attain 100% of lifeline-businesses within the city of New Orleans.
 
-Ideas for future research and modeling, for which we did not have the time nor budget, includes the inclusion of population density as a feature to predict the number of people affected by the diaster. Also, we noticed that several business that exist in close proximity to others businesses of similar nature may be inflating lifeline-density in certain areas.
+Ideas for future research and modeling, for which we did not have the time nor budget, includes the inclusion of population density as a feature to predict the number of people affected by the diaster. Also, we noticed that several business that exist in close proximity to others businesses of similar nature may be inflating lifeline-density in certain areas. As for knowing the status of a lifeline, there does not appear to be an efficient way to gather that live data. Response organizations may want to consider partnering with companies that appeal to a large audience to develop a prototype that could aid in the collection of real-time closures for areas at high risk.
 
 ## Resources
 [1] https://www.fema.gov/media-library-data/1543953591582-d3437147e8954b5c9b8469dc2d173531/Revised_Community_Lifelines_Information_Sheet.pdf  
