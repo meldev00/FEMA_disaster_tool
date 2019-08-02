@@ -2,7 +2,7 @@
 ## Problem Statement
 In the event of a disaster, it is essential that goverment and private forces rapidly identify potential threats and communicate damage and rescue efforts effectively. The Federal Emergency Management Agency, known as FEMA, has developed a list of seven lifelines which represent establishments most essential to supporting human populations during times of crisis. The lifelines are as follows: safety and security; food, water, and sheltering; health and medical; energy; communications; transportation; and hazardous waste. With these seven lifelines in mind, our study was conducted for New Light Technologies with two goals:
 
-  - build a tool that takes in a zip code and returns the lifelines in the affected area
+  - build a tool that takes in a latitude,longitude coordinate and returns the lifelines in the affected area
   - predict the potential impact of a disaster to the lifelines
 
 ## Data Dictionary
