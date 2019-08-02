@@ -1,0 +1,13 @@
+Each of the functions in this folder was developed to help the fema tool operate. Some were eventually used, some were not. Below is a general break down of each function, the inputs needed and the output.
+
+distance_formula: Takes in two (lat,long) tuples and returns the distance in kilometers between them. Taken from Wayne Dyck.
+
+draw_heat_map_unaffected: This returns a heatmap of life-lines listed in the dataset that are NOT in the reported affected area. Need to pass in the affected_df(output of the "return_stats" function) and the original_df.
+
+draw_heat_map: Takes in the center as a tuple and a dataframe and returns a heat map of the life lines in the given area.
+
+draw_map: Takes in the epicenter of a storm and a dataframe containing lifeline information. Returns a map of the life-lines in that area. Life-lines can be clicked on to see category and description.
+
+return_stats: Takes in the epicenter of a storm as a tuple, the radius of the area affected in miles, and the dataframe of life-lines in the given city. Returns a breakdown of the life-lines in the affected area by catergory.
+
+tool: the fema tool itself. prompts the user for the lat, long of the center of the storm, range that the storm is affecting and returns the breakdown of lifelines in the affected area and a heatmap to show the distribution. there is the option to also return a dataframe of affected lifelines if needed.
