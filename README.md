@@ -34,7 +34,7 @@ In the early stages of this study, we outlined the data that would be most impor
 
 The first stage is a preemptive look at what areas of a given location are already in danger of low lifeline support. We tried to accomplish this task by using KMeans clustering; however, an un-clustered heatmap of lifeline-businesses proved to be more representational in this context. Given this, FEMA can put in place support systems for when/if an event occurs. Based on our model you can see below the areas in New Orleans that have high concentrations of specific lifelines.
 
-![](./images/all_life_lines.png)
+![](./images/all_life_lines.png width = 10)
 
 As expected the highest concentration of lifelines is in the downtown area. Nevertheless, it is worth noting the other areas in which there are concentrations in the surrounding areas. In preparing for possible natural disasters it is suggested that FEMA consider these locations as highly vulnerable.
 
